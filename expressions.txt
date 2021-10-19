@@ -1,0 +1,10 @@
+var system = java.lang.System
+system.out.println("Normal print output")
+var logger = java.util.logging.Logger;
+var log = logger.getLogger("MY_JS_LOGGER");
+log.info("I'm logging");
+system.out.println(execution.getVariable("decision"));
+
+
+
+${execution.setVariable("status","success")}
