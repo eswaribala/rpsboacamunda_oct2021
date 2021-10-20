@@ -1,0 +1,18 @@
+http://localhost:7074/engine-rest/message
+
+{
+  "messageName" : "appointment_req_message",
+  "businessKey" : "100",
+  
+  "processVariables" : {
+    "customerId" : {"value" : 1378457, "type": "Long"
+                  },
+     "doa":{"value" : "2021-10-25", "type": "String"},
+     "time":{"value" : "10.30 am", "type": "String"},
+     "reason":{"value" : "Top up Loan", "type": "String"}             
+    
+  }
+}
+
+//normal start
+http://localhost:7074/engine-rest/process-definition/key/upload_process/start
